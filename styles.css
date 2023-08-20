@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(232, 229, 229);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    min-width: 80%;
+}
+
+/* estilos form */
+form{
+    margin-top: 10px;
+    display: flex;
+}
+form input{
+    margin: 10px    ;
+}
+
+/* estilos cards */
+#mostrar_libros{
+    width: 100%;
+    border: 1px solid;
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.libro{
+    border: 1px solid;
+    width: calc(25% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.libro *{
+    margin: 0;
+}
+.libro .titulo{
+    font-family: 'Arial Black';
+    font-size: 24px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.libro .autor{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.5;
+    font-size: 14px;
+}
+.libro .paginas{
+    margin-bottom: 10px;
+}
+
+.libro .estado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.libro .estado input{
+    margin-right: 5px;
+}
+.libro .btnEliminar{
+    margin-left: auto;
+}
